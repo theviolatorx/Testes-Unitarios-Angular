@@ -1,0 +1,10 @@
+<hr />
+<h1>Investimentos</h1>
+
+<ul>
+    @for(investiment of investiments; track investiment){
+    <li>
+        {{ investiment.name }} | {{ investiment.value }}
+    </li>
+    }
+</ul>
