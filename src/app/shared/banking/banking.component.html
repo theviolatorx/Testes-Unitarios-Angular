@@ -1,0 +1,15 @@
+<p>
+    <strong>Bem-vindo Clóvis Garcia</strong>
+    <br />
+    Ag: 0465, CC: 45279-5
+</p>
+
+<p>Poupança: R$ {{ getPoupanca }}
+    <input type="number" #sacar />
+    <button (click)="setSacar(sacar.value);"> Sacar </button>
+</p>
+
+<p>Conta Corrente: R$ {{ getCorrente }}
+    <input type="number" #depositar />
+    <button (click)="setDepositar(depositar.value);"> Depositar </button>
+</p>
