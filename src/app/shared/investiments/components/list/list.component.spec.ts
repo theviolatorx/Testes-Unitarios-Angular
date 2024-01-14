@@ -32,7 +32,8 @@ describe('ListComponent', () => {
     let investiments = fixture.debugElement.nativeElement.querySelectorAll('.list-itens');
     
     expect(investiments.length).toBe(12);
-    expect(investiments[7].textContent).toContain('Safra);')
+    expect(investiments[7].textContent).toContain('Safra');
+    expect(investiments[7].textContent).not.toContain('PagSeguro');
     expect(investiments[10].textContent.trim()).toEqual("Citibank | 105"); 
   
   });
